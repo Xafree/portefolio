@@ -3,5 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.body-home-page{
+    display: flex;
+    flex-direction: column;
+}
 
+@media screen and (min-width:1024px){
+    .global-home-page{
+        width: 70%;
+        margin:auto;
+    }
+    .body-home-page{
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -1,8 +1,21 @@
 :root {
+
+  /*Background*/
   --backgroup-app: #151312;
-  --backgroup-navbar: RGBA(255,255,255,3%);
+  --backgroup-navbar: rgba(255,255,255,3%);
+  --backgroup-div-orange: rgba(244, 108, 56, 1);
+  --backgroup-div-green: rgba(197, 255, 65, 1);
+  --backgroup-div-transparent: rgba(255,255,255,0);
+
+  /* Text */
   --white:#FFFFFF;
+  --h1-gray:rgba(182,180,189,20%);
   --gray-text:#6A6B6E;
+  --gray-text-p:#998F8F;
+
+  /*Radius*/
+  --border-raduis-16: 16px;
+  --border-raduis-10: 10px;
 }
 
 @font-face {
@@ -40,7 +53,12 @@
   font-style: normal;   /* Style normal */
 }
 
-
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/font/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;  /* Poids normal */
+  font-style: normal;   /* Style normal */
+}
 
 * {
   font-family: Poppins, sans-serif;

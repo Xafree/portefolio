@@ -4,24 +4,21 @@
     desktop: 1025 // Ordinateur
  */
 
-
 .profil-card-global{
     width: 70%;
     height: 45vh;
     background-color: var(--white);
-    border-radius: 16px;
-    position: sticky;
+    border-radius: var(--border-raduis-16);
     top: 20px;
     padding: 30px;
     margin: 2.5em auto auto;
-
 }
 
 .image-container{
     width: 65%;
     height: 23vh;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: var(--border-raduis-16);
     object-fit: cover;
     object-position: center;
     margin:auto;
@@ -30,7 +27,7 @@
 .personal-picture{
     width: 100%;
     margin-top: -40px;
-    border-radius: 16px;
+    border-radius: var(--border-raduis-16);
 }
 
 .name{
@@ -64,6 +61,30 @@
     gap: 16px;
 }
 
-@media screen and (min-width:765px) and (max-width: 1024px ){
+@media screen and (min-width:560px) and (max-width: 1024px ){
 
+    .image-container{
+        height: 25vh;
+    }
+
+    .personal-picture{
+        width: 100%;
+        margin-top: calc(100vw - 112vw);
+        border-radius: 16px;
+    }
+
+    .navapp{
+        margin-top: 1%;
+    }
+
+    .description{
+        margin-top: 3%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .profil-card-global{
+        position: sticky;
+        width: 20%;
+    }
 }

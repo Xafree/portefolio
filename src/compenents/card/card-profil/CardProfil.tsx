@@ -8,7 +8,6 @@ import './cardprofil.css';
 
 /**
  * Presentation card on the left page
- *
  */
 export function CardProfil() {
     return(
