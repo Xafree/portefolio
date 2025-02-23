@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.contaner{
+    background-color: var(--backgroup-navbar);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 18px;
+    width: min-content;
+    height: 48px;
+    border-radius: 16px;
+    padding: 0 20px 0 20px;
+    margin-top: 1.5em;
+    position: relative;
+
+}
+
+.icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.img-icon{
+    padding: 4px;
+}
+
+.icon::after{
+    content: attr(data-tooltip); /* On récuper le texte depuis le HTML*/
+    color : var(--white);
+    background-color: var(--backgroup-navbar);
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 3px 20px 3px 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.icon:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(30px);
+}

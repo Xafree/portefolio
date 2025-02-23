@@ -1,0 +1,69 @@
+/**
+    mobile: 768, // Téléphone
+    tablet: 1024, // Tablette
+    desktop: 1025 // Ordinateur
+ */
+
+
+.profil-card-global{
+    width: 70%;
+    height: 45vh;
+    background-color: var(--white);
+    border-radius: 16px;
+    position: sticky;
+    top: 20px;
+    padding: 30px;
+    margin: 2.5em auto auto;
+
+}
+
+.image-container{
+    width: 65%;
+    height: 23vh;
+    overflow: hidden;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+    margin:auto;
+}
+
+.personal-picture{
+    width: 100%;
+    margin-top: -40px;
+    border-radius: 16px;
+}
+
+.name{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.description{
+    margin-top: 3%;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gray-text);
+}
+
+.navapp{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 5%;
+}
+.card-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width:765px) and (max-width: 1024px ){
+
+}
