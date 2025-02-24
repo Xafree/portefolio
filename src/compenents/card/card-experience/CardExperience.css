@@ -27,7 +27,7 @@
 }
 
 .details-texte-Experience > p{
-    margin-top: 1rem;
+    margin-top: 1em;
     font-size: 16px;
     font-weight: 400;
     color:var(--gray-text-p);
@@ -66,12 +66,7 @@
 
 @media screen and (min-width:1024px){
     .Card-Experience{
-        background-color: var(--backgroup-app);
         width: 100%;
-        height: 25vh;
-        display: flex;
-        flex-direction: column;
-        border-radius: var(--border-raduis-16);
         padding: 16px 8px;
     }
 
@@ -80,7 +75,7 @@
     }
 
     .details-texte-Experience > p{
-        max-width: 70%;
+        max-width: 80%;
         font-size: 16px;
     }
 }
