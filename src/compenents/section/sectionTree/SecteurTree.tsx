@@ -9,7 +9,7 @@ export function SecteurTree() {
     const data = DATAEXPERIENCE
 
     return(
-        <section>
+        <section className="section-tree">
             <h1 className="section-one-h1">4 YEARS OF <span>EXPERIENCES</span></h1>
             <div className="cards">
                 {

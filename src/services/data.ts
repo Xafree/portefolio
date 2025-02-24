@@ -1,7 +1,7 @@
 export const DATAPROJECT = [
     {id:1, projectName:"SimpleView", description:"Annuaire de film/série", imgLink:"https://ah-togo.fr/image/SimpleView.png", imgDescription:"Site SimpleView.fr"},
-    {id:2, projectName:"AH-togo",    description:"Annuaire de film/série", imgLink:"https://ah-togo.fr/image/ah-togo.png", imgDescription:"Site ah-togo.fr"},
-    {id:3, projectName:"Portefolio", description:"Annuaire de film/série", imgLink:"https://ah-togo.fr/image/portefolio.png", imgDescription:"Mon portefolio"},
+    {id:2, projectName:"AH-togo",    description:"Site d'aide humainitaire", imgLink:"https://ah-togo.fr/image/ah-togo.png", imgDescription:"Site ah-togo.fr"},
+    {id:3, projectName:"Portefolio", description:"Site personnel", imgLink:"https://ah-togo.fr/image/portefolio.png", imgDescription:"Mon portefolio"},
 ];
 
 export const DATAEXPERIENCE = [

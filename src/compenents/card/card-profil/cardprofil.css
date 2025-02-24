@@ -9,7 +9,7 @@
     height: 45vh;
     background-color: var(--white);
     border-radius: var(--border-raduis-16);
-    top: 20px;
+
     padding: 30px;
     margin: 2.5em auto auto;
 }
@@ -85,6 +85,7 @@
 @media screen and (min-width:1024px){
     .profil-card-global{
         position: sticky;
+        top: 50px;
         width: 20%;
     }
 }

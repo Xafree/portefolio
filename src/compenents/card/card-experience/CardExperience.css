@@ -58,7 +58,7 @@
     transform: translate(20px, -5px);
 }
 
-@media screen and (min-width:560px) and (max-width: 1024px ){
+@media screen and (min-width:560px) and (max-width: 1024px){
     .arrow-svg-experience{
         display: block;
     }
