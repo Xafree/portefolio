@@ -1,0 +1,77 @@
+.Card-Experience{
+    background-color: var(--backgroup-app);
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-raduis-16);
+    padding: 16px 8px;
+}
+
+.title-Experience{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.title-Experience > h2:nth-child(2){
+    font-size: 20px;
+    color: var(--gray-text);
+}
+
+.details-Experience{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+}
+
+.details-texte-Experience > p{
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--gray-text-p);
+    max-width: 90%;
+    max-height: 12vh;
+    line-height: 1.2;
+    overflow: hidden;
+}
+.details-texte-Experience > p:nth-child(2){
+    position: absolute;
+    bottom: 0;
+}
+
+.arrow-svg-experience{
+    display: none;
+    position: absolute;
+    top:10%;
+    left: 90%;
+    stroke: var(--backgroup-div-orange);
+    transition: transform 0.2s ease-in;
+}
+
+.Card-Experience:hover{
+    background-color: var(--backgroup-navbar);
+}
+
+.Card-Experience:hover .arrow-svg-experience{
+    transform: translate(20px, -5px);
+}
+
+@media screen and (min-width:560px) and (max-width: 1024px ){
+    .arrow-svg-experience{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .arrow-svg-experience{
+        display: block;
+    }
+
+    .details-texte-Experience > p{
+        max-width: 70%;
+        font-size: 16px;
+    }
+}
+

@@ -10,10 +10,12 @@
   /* Text */
   --white:#FFFFFF;
   --h1-gray:rgba(182,180,189,20%);
+  --text-gray:rgba(96, 96, 96, 1);
   --gray-text:#6A6B6E;
   --gray-text-p:#998F8F;
 
   /*Radius*/
+  --border-raduis-8: 8px;
   --border-raduis-16: 16px;
   --border-raduis-10: 10px;
 }
@@ -21,7 +23,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../assets/font/poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: bold;  /* Poids normal */
+  font-weight: 700;  /* Poids normal */
   font-style: normal;   /* Style normal */
 }
 

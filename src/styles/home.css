@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .body-home-page{
     display: flex;
@@ -11,11 +12,16 @@
 
 @media screen and (min-width:1024px){
     .global-home-page{
-        width: 70%;
-        margin:auto;
+        width: 100%;
     }
     .body-home-page{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        width: 70%;
+        gap: 60px
+    }
+    .section{
+        width: 61%;
     }
 }

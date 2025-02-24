@@ -53,7 +53,7 @@
     flex-direction: row;
     gap: 25px;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: calc(45vh - 44vh);
 }
 .card-bot{
     display: flex;
