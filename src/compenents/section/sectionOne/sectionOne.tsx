@@ -2,6 +2,7 @@ import React from "react";
 import "./sectionOne.css";
 import planSuperposerIcons from '../../../assets/icons/plan-superposer.png';
 import architetureIcons from '../../../assets/icons/architechure.png';
+import {ScrollAnimation} from "../../../styles/animation/ScrollAnimation";
 
 /**
  * Section one of my portfolio
@@ -10,7 +11,9 @@ import architetureIcons from '../../../assets/icons/architechure.png';
 export function SectionOne() {
     return(
         <section className="section-one">
-            <h1 className="section-one-h1">FULLSTACK <span>DEVELOPER</span></h1>
+            <ScrollAnimation>
+                <h1 className="section-one-h1">FULLSTACK <span>DEVELOPER</span></h1>
+            </ScrollAnimation>
             <p className="section-one-p">Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.</p>
             <div className="score">
                 <p>+4 <span>YEARS OF EXPERIENCE</span></p>
