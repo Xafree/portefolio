@@ -9,7 +9,7 @@ export function SectionTwo() {
 
     return(
         <section className="section-two">
-            <h1 className="section-one-h1">RECENT <span>PROJECTS</span></h1>
+            <h1 className="section-one-Two">RECENT <span>PROJECTS</span></h1>
             <div className="cards">
                 {
                     data.map((project, index) =>{

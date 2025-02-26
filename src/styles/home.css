@@ -5,6 +5,23 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 8px;  /* Pour une scrollbar verticale */
+    height: 8px; /* Pour une scrollbar horizontale */
+}
+
+/* Couleur du fond de la scrollbar */
+::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 4px;
+}
+
+/* Couleur de la barre (le curseur de défilement) */
+::-webkit-scrollbar-thumb {
+    background: var(--backgroup-app);
+    border-radius: 4px;
+}
+
 @media screen and (min-width:1024px){
     .global-home-page{
         width: 100%;

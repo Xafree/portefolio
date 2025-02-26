@@ -5,7 +5,9 @@ import {CardProfil} from "../compenents/card/card-profil/CardProfil";
 import {SectionOne} from "../compenents/section/sectionOne/sectionOne";
 import {SectionTwo} from "../compenents/section/sectionTwo/sectionTwo";
 import {ScrollAnimation} from "../styles/animation/ScrollAnimation";
-import {SecteurTree} from "../compenents/section/sectionTree/SecteurTree";
+import {SecteurThree} from "../compenents/section/sectionThree/SecteurThree";
+import {SecteurFour} from "../compenents/section/secteurFour/secteurFour";
+import {SecteurFive} from "../compenents/section/SecteurFive/secteurFive";
 
 /*
  * Home page
@@ -22,7 +24,13 @@ export function Home() {
                         <SectionTwo/>
                     </ScrollAnimation>
                     <ScrollAnimation>
-                        <SecteurTree/>
+                        <SecteurThree/>
+                    </ScrollAnimation>
+                    <ScrollAnimation>
+                        <SecteurFour />
+                    </ScrollAnimation>
+                    <ScrollAnimation>
+                        <SecteurFive />
                     </ScrollAnimation>
                 </div>
             </div>

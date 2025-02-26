@@ -1,6 +1,21 @@
 .section-two{
     margin-top: 2em;
 }
+
+.section-one-Two{
+    font-size: 52px;
+    line-height: 1;
+    color: var(--white);
+    text-align: center;
+}
+
+.section-one-Two > span{
+    color: var(--h1-gray);
+    font-size: 52px;
+
+}
+
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -10,9 +25,26 @@
 
 @media screen and (min-width:560px) and (max-width: 1024px ){
 
+ .section-one-Two{
+     text-align: center;
+ }
+
 }
 
 @media screen and (min-width:1024px){
+
+    .section-one-Two{
+        text-align: left;
+    }
+
+    .section-one-Two{
+        font-size: 90px;
+    }
+
+    .section-one-Two > span{
+        font-size: 90px;
+    }
+
     .cards{
         display: block;
     }

@@ -1,16 +1,16 @@
 import React from "react";
-import './SecteurTree.css';
+import './SecteurThree.css';
 import {DATAEXPERIENCE} from "../../../services/data";
 import {CardExperience} from "../../card/card-experience/CardExperience";
 
 
-export function SecteurTree() {
+export function SecteurThree() {
 
     const data = DATAEXPERIENCE
 
     return(
-        <section className="section-tree">
-            <h1 className="section-one-h1">4 YEARS OF <span>EXPERIENCES</span></h1>
+        <section className="section-three">
+            <h1 className="section-one-Two">4 YEARS OF <span>EXPERIENCES</span></h1>
             <div className="cards">
                 {
                     data.map((experience, index) =>{

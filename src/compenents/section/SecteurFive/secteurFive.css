@@ -1,0 +1,49 @@
+.section-five{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 50vh;
+}
+
+.content-texte {
+    text-align: justify;
+    width: 90%;
+    height: 15vh;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-text-p);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    color : var(--white);
+    background-color: var(--backgroup-div-orange) ;
+    border-radius: var(--border-raduis-8);
+}
+
+@media screen and (min-width:560px) and (max-width: 1024px ){
+
+
+}
+
+@media screen and (min-width:1024px){
+
+    .content-texte {
+        text-align: justify;
+        width: 100%;
+        height: 15vh;
+        overflow: hidden;
+        margin: 0;
+    }
+
+
+}
