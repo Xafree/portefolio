@@ -4,7 +4,8 @@ import github from '../../../assets/icons/github.png';
 import instagram from '../../../assets/icons/instagram.png';
 import linkedin from '../../../assets/icons/Linkedin.png';
 import mail from '../../../assets/icons/mail.png';
-import './cardprofil.css';
+//import './cardprofil.css';
+import './cardprofile-responsive.css';
 
 /**
  * Presentation card on the left page
@@ -16,9 +17,9 @@ export function CardProfil() {
                 <div className="image-container">
                     <img src={profil} alt={"Personal"} className="personal-picture"/>
                 </div>
-                <p className="name">Eberst Emmanuel</p>
             </div>
             <div className="card-bot">
+                <p className="name">Emmanuel Eberst</p>
                 <p className="description"> Un développeur Fullstack axé sur la qualité et l’innovation, pour concrétiser vos idées.</p>
                 <div className= "navapp">
                     <a href="https://www.linkedin.com/in/eeberst" rel="noreferrer" target="_blank" className="a-link">

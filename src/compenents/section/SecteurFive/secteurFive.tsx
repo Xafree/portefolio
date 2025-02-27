@@ -15,7 +15,7 @@ export function SecteurFive({page}:ISecteurFive) {
                 Performance, sécurité et innovation sont mes priorités.
                 Prêt à concrétiser votre projet ? Contactez-moi !</p>
             <a href="mailto:emmanuel.eberst.pro@hotmail.com?subject=Premier contact" className="contact-me" >
-                <button className="contact-me">CONTACT MOI</button>
+                <button className="contact-me">CONTACTEZ MOI</button>
             </a>
         </section>
     );

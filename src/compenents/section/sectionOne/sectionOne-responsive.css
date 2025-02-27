@@ -1,15 +1,16 @@
 .section-one{
-    margin-top: 2.2em;
-    width: 95%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: auto;
+    width: 90%;
     margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
 }
 
 .section-one-h1{
-    font-size: 52px;
+    display: flex;
+    flex-direction: column;
+    font-size: Clamp(44px, 2vw, 52px);
     line-height: 1;
     color: var(--white);
     margin-left: auto;
@@ -18,8 +19,8 @@
 }
 
 .section-one-h1 >span{
+    font-size: Clamp(42px, 2vw, 52px);
     color: var(--h1-gray);
-    font-size: 52px;
 }
 
 .section-one-p{
@@ -38,7 +39,6 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    width: 65%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -64,8 +64,9 @@
 
 .div-block{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin-top: 1.5em;
     gap:30px;
@@ -73,55 +74,70 @@
 }
 
 .left-block{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: var(--backgroup-div-orange);
     border-radius: var(--border-raduis-10);
     font-size: 24px;
     width: 80%;
+    max-width: 300px;
     color: var(--white);
-    height: 22vh;
     font-weight: 400;
     line-height: 150%;
     padding:15px
 }
 
-.left-block >img{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.left-block> img{
+     width: 30px;
 }
 
 .right-block{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: var(--backgroup-div-green);
     border-radius: var(--border-raduis-10);
     width: 80%;
+    max-width: 300px;
     font-size: 24px;
-    height: 22vh;
     font-weight: 400;
     line-height: 150%;
     padding:15px;
 }
 
 .right-block >img{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 30px;
 }
 
 .button-arrow-white{
-    position: absolute;
-    width: 40px;
-    height: 40px;
     border-radius:var(--border-raduis-10);
     background-color: transparent;
     border: 2px solid var(--white);
+    margin-left: auto;
+    width: 40px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    bottom: 15px;
-    right: 15px;
     transition: background-color 0.3s ease;
 }
+
+.button-arrow-black{
+    border-radius:var(--border-raduis-10);
+    background-color: transparent;
+    width: 40px;
+    padding: 8px;
+    margin-left: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 .arrow-Icon-white{
     transition: stroke 0.3s ease;
 }
@@ -130,23 +146,6 @@
 }
 .button-arrow-white:hover .arrow-Icon-white{
     stroke: var(--backgroup-div-orange);
-}
-
-.button-arrow-black{
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    margin-top: 30px;
-    width: 40px;
-    height: 40px;
-    border-radius:var(--border-raduis-10);
-    background-color: transparent;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .arrow-Icon-black{
@@ -160,21 +159,14 @@
 .button-arrow-black:hover .arrow-Icon-black{
     stroke: var(--backgroup-div-green);
 }
-
 @media screen and (min-width:560px) and (max-width: 1024px ){
     .left-block{
-        width: 45%;
-        height: 23vh;
+        max-width: 300px;
     }
 
-    .right-block{
-        width: 45%;
-        height: 23vh;
-    }
 
-    .score{
-        width: 40%;
-    }
+}
+@media screen and (min-width:560px) and (max-width: 1024px ){
 }
 
 @media screen and (min-width:1024px){
@@ -183,12 +175,12 @@
     }
 
     .section-one-h1{
-        font-size: clamp(100px, 5vw, 110px);
+        font-size: clamp(90px, 5vw, 110px);
     }
 
     .section-one-h1 >span{
         color: var(--h1-gray);
-        font-size: clamp(100px, 5vw, 110px);
+        font-size: clamp(90px, 5vw, 110px);
     }
 
 
@@ -205,27 +197,22 @@
     }
 
     .score{
-        gap: 30px;
         width: 30%;
         margin-right: 0;
         margin-left: 0;
     }
 
     .div-block{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5em;
-        gap:30px;
+        justify-content: left;
     }
 
     .left-block{
+        max-width: 280px;
         width: 70%;
-        height: 23vh;
     }
 
     .right-block{
         font-size: 24px;
-        height: 23vh;
     }
 }
+
