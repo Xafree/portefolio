@@ -1,25 +1,29 @@
 .section-two{
     margin-top: 2em;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-one-Two{
-    font-size: 52px;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
     line-height: 1;
     color: var(--white);
-    text-align: center;
 }
 
 .section-one-Two > span{
     color: var(--h1-gray);
-    font-size: 52px;
+    font-size: 42px;
 
 }
-
 
 .cards{
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top:2em;
 }
 
@@ -33,16 +37,18 @@
 
 @media screen and (min-width:1024px){
 
-    .section-one-Two{
-        text-align: left;
+    .section-two{
+        width: 100%;
     }
 
+
     .section-one-Two{
-        font-size: 90px;
+        text-align: left;
+        font-size: 80px;
     }
 
     .section-one-Two > span{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .cards{

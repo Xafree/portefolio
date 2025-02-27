@@ -3,13 +3,14 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 50vh;
+    height: 70vh;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-texte {
-    text-align: justify;
     width: 90%;
-    height: 15vh;
     font-size: 16px;
     font-weight: 400;
     color: var(--gray-text-p);
@@ -28,6 +29,7 @@
     color : var(--white);
     background-color: var(--backgroup-div-orange) ;
     border-radius: var(--border-raduis-8);
+    width: 93%;
 }
 
 @media screen and (min-width:560px) and (max-width: 1024px ){
@@ -36,6 +38,9 @@
 }
 
 @media screen and (min-width:1024px){
+    .section-five{
+        width: 100%;
+    }
 
     .content-texte {
         text-align: justify;

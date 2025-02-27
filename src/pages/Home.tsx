@@ -21,7 +21,7 @@ export function Home() {
                 <div className="section">
                     <SectionOne/>
                     <ScrollAnimation>
-                        <SectionTwo/>
+                        <SectionTwo page={"home"}/>
                     </ScrollAnimation>
                     <ScrollAnimation>
                         <SecteurThree/>

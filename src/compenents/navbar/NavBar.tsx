@@ -20,7 +20,7 @@ export function NavBar() {
                 <div className="icon" data-tooltip="Accueil">
                     <Link to="/" className="link"><img src={home}  alt={"home button"} className="img-icon"/></Link>
                 </div>
-                <div className="icon" data-tooltip="Project">
+                <div className="icon" data-tooltip="Projects">
                     <Link to="/" className="link"><img src={project}  alt={"project button" } className="img-icon"/></Link>
                 </div>
                 <div className="icon" data-tooltip="Experiences">

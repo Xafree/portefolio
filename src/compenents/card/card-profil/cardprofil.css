@@ -24,7 +24,7 @@
 }
 
 .personal-picture{
-    width: 200%;
+    width: 150%;
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -52,9 +52,12 @@
 .navapp{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
     margin-top: calc(45vh - 44vh);
+}
+.a-link >img{
+    width: 25px;
 }
 .card-bot{
     display: flex;
@@ -89,4 +92,9 @@
         width: 40%;
         max-width: 350px;
     }
+
+    .personal-picture{
+        width: 200%;
+    }
+
 }
