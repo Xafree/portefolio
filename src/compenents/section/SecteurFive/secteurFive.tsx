@@ -1,11 +1,13 @@
 import React from "react";
 import './secteurFive.css';
-
-export function SecteurFive() {
+interface ISecteurFive {
+    page:string;
+}
+export function SecteurFive({page}:ISecteurFive) {
 
     return(
         <section className="section-five">
-            <h1 className="section-one-Two">LET'S WORK <span> TOGETHER</span></h1>
+            <h1 className={page === "contact" ? "section-one-Two-Project" : "section-one-Two"}>LET'S WORK <span> TOGETHER</span></h1>
             <p className="content-texte">
                 Besoin d’un site web performant et sur-mesure ?
                 En tant que développeur Fullstack, je conçois des applications modernes et optimisées.

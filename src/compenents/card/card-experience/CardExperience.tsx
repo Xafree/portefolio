@@ -1,15 +1,23 @@
 import React from "react";
 import './CardExperience.css';
 
+
 interface ICardExperience {
     company:string,
     titleJob:string,
     description:string,
     date:string,
+    link:string,
 }
-export function CardExperience({company,titleJob,description,date}:ICardExperience) {
+
+export function CardExperience({company,titleJob,description,date, link}:ICardExperience) {
+
+    const handleClick = () => {
+            window.open(link, "_blank");
+    };
+
     return(
-        <div className="Card-Experience">
+        <div className="Card-Experience" onClick={handleClick}>
             <div className="title-Experience">
                 <h2>{titleJob}</h2>
                 <h2>{company}</h2>

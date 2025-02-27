@@ -10,7 +10,7 @@ export function SectionTwo({page}:ISectionTwo) {
 
     const data = DATAPROJECT;
 
-    const Top3Project = (data:any):any[] => {
+    const top3Project = (data:any):any[] => {
         let out :any[] = []
         data.forEach((element:any, index:number)=>{
               if( index<=2){
@@ -21,16 +21,16 @@ export function SectionTwo({page}:ISectionTwo) {
     }
 
     return(
-        <section className="section-two">
-            <h1 className="section-one-Two">RECENT <span>PROJECTS</span></h1>
+        <section className={page ==="project" ? "section-two-project" :"section-two"}>
+            <h1 className={page === "project" ? "section-one-Two-Project" : "section-one-Two"}>RECENT <span>PROJECTS</span></h1>
             <div className="cards">
                 { page === "project"  ?
                     data.map((project, index) =>{
-                        return <CardProject  description={project.description} imgDescription={project.imgDescription} imgLink={project.imgLink} projectName={project.projectName} key={index}/>
+                        return <CardProject  description={project.description} imgDescription={project.imgDescription} imgLink={project.imgLink} projectName={project.projectName} projecLink={project.projectLink} key={index}/>
                     })
                     :
-                    Top3Project(data).map((project, index) =>{
-                        return <CardProject  description={project.description} imgDescription={project.imgDescription} imgLink={project.imgLink} projectName={project.projectName} key={index}/>
+                    top3Project(data).map((project, index) =>{
+                        return <CardProject  description={project.description} imgDescription={project.imgDescription} imgLink={project.imgLink} projectName={project.projectName} projecLink={project.projectLink} key={index}/>
                     })
                 }
             </div>

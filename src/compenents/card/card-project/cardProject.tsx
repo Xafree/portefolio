@@ -1,15 +1,29 @@
 import React from "react";
 import './cardProject.css';
+import {useNavigate} from "react-router-dom";
 
 interface ICardproject {
     imgLink:string,
     imgDescription:string,
     projectName:string,
     description:string,
+    projecLink:string,
 }
-export function CardProject({imgLink,imgDescription,projectName,description}:ICardproject) {
+export function CardProject({imgLink,imgDescription,projectName,description,projecLink}:ICardproject) {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        if(projecLink === ""){
+            navigate("/");
+        }else{
+            window.open(projecLink, "_blank");
+        }
+
+    };
+
     return(
-        <div className="card-project">
+        <div className="card-project" onClick={handleClick}>
             <div className="card-img-container">
                 <img src={imgLink} alt={imgDescription} className="card-image"/>
             </div>

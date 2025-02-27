@@ -7,11 +7,14 @@ import Mongo from '../../../assets/icons/mongo.svg';
 import MySql from '../../../assets/icons/mysql.svg';
 import './secteurFour.css';
 
-export function SecteurFour() {
+interface ISecteurFour {
+    page:string;
+}
+export function SecteurFour({page}:ISecteurFour) {
 
     return(
         <section className="section-four">
-            <h1 className="section-one-Two">PREMIUM<span> TOOLS </span></h1>
+            <h1 className={page === "tools" ? "section-one-Two-Project" : "section-one-Two"}>PREMIUM<span> TOOLS </span></h1>
             <div className="cards-tech">
                 <div className="tech">
                     <img src={ReactIcon} alt={"React Icon"}/>
