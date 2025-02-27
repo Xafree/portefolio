@@ -21,16 +21,16 @@ export function CardProfil() {
             <div className="card-bot">
                 <p className="description"> Un développeur Fullstack axé sur la qualité et l’innovation, pour concrétiser vos idées.</p>
                 <div className= "navapp">
-                    <a href="https://www.linkedin.com/in/eeberst" target="_blank" className="a-link">
+                    <a href="https://www.linkedin.com/in/eeberst" rel="noreferrer" target="_blank" className="a-link">
                         <img src={linkedin} alt={"redirecction link, go to linkedin"}/>
                     </a>
-                    <a href="https://github.com/Xafree" target="_blank" className="a-link">
+                    <a href="https://github.com/Xafree" rel="noreferrer" target="_blank" className="a-link">
                         <img src={github} alt={"redirection link, go to guthub"}/>
                     </a>
-                    <a href="https://www.instagram.com/emmanuel.ebrt/" target="_blank" className="a-link">
+                    <a href="https://www.instagram.com/emmanuel.ebrt/" rel="noreferrer" target="_blank" className="a-link">
                         <img src={instagram} alt={"redirection link, go to instragram"}/>
                     </a>
-                    <a href="mailto:emmanuel.eberst.pro@hotmail.com?subject=Premier contact" target="_blank" className="a-link">
+                    <a href="mailto:emmanuel.eberst.pro@hotmail.com?subject=Premier contact" rel="noreferrer" target="_blank" className="a-link">
                         <img src={mail} alt={"Send me a email"}/>
                     </a>
                 </div>
