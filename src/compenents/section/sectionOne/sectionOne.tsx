@@ -24,7 +24,7 @@ export function SectionOne() {
                 <div className="left-block">
                     <img src={planSuperposerIcons} alt={"Plan superposer"}/>
                     <p>Fantastique experiences</p>
-                    <Link to="/Experiences">
+                    <Link to="/experiences">
                         <button className="button-arrow-white">
                             <svg className="arrow-Icon-white" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h16M16 5l7 7-7 7"></path>

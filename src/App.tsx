@@ -17,10 +17,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/Projects' element={<Project/>} />
-          <Route path='/Experiences' element={<Experiences/>} />
-          <Route path='/Tools' element={<Tools/>} />
-          <Route path='/Contact' element={<Contact/>} />
+          <Route path='/projects' element={<Project/>} />
+          <Route path='/experiences' element={<Experiences/>} />
+          <Route path='/tools' element={<Tools/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </div>
