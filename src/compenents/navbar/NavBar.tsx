@@ -24,7 +24,7 @@ export function NavBar() {
                     <Link to="/projects" className="link"><img src={project}  alt={"project button" } className="img-icon"/></Link>
                 </div>
                 <div className="icon" data-tooltip="Experiences">
-                    <Link to="/cxperiences" className="link"><img src={works}  alt={"experience button"} className="img-icon"/></Link>
+                    <Link to="/experiences" className="link"><img src={works}  alt={"experience button"} className="img-icon"/></Link>
                 </div>
                 <div className="icon" data-tooltip="tools">
                     <Link to="/tools" className="link"><img src={tools}  alt={"tools button"} className="img-icon"/></Link>
