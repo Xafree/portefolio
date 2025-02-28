@@ -33,7 +33,7 @@ export function SecteurFour({page}:ISecteurFour) {
                 <div className="tech">
                     <img src={Java} alt={"Java Icon"}/>
                     <div className="explain-text">
-                        <h3>Java & Spring boot</h3>
+                        <h3>Java</h3>
                         <p>Backend Builder</p>
                     </div>
                 </div>

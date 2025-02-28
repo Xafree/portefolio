@@ -9,11 +9,9 @@
     margin-top: 1em;
     display: grid;
     grid-template-columns: auto;
-    width: 100%;
+    width: 95%;
     grid-row-gap: 5px;
     justify-content: center;
-
-
 }
 
 .tech{
@@ -81,7 +79,6 @@
         grid-row-gap: 10px;
     }
     .tech{
-        width: 100%;
         max-width: 350px;
     }
 

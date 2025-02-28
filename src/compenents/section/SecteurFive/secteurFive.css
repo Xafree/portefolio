@@ -44,10 +44,23 @@
 
     .content-texte {
         text-align: justify;
-        width: 100%;
+        width: 90%;
         height: 15vh;
         overflow: hidden;
         margin: 0;
+    }
+
+    .contact-me{
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px;
+        border: 0;
+        cursor: pointer;
+        color : var(--white);
+        background-color: var(--backgroup-div-orange) ;
+        border-radius: var(--border-raduis-8);
+        width: 88%;
     }
 
 

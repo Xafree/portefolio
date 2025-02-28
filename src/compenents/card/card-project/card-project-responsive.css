@@ -1,0 +1,91 @@
+.card-project{
+    background-color: var(--backgroup-app);
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap :5px;
+    border-radius: var(--border-raduis-16);
+    padding: 8px 2px;
+
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    -ms-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+
+.card-img-container{
+    flex-basis: 45%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img-container> img{
+    padding: 8px 8px;
+    width: 90%;
+
+    max-width: 300px;
+    border-radius: var(--border-raduis-16);
+}
+
+.details {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+}
+
+.details-text{
+    margin-left: 1rem;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.details-text > h3{
+    color : var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.details-text > p{
+    color : var(--text-gray);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.arrow-svg{
+    stroke: var(--backgroup-div-orange);
+    transition: transform 0.2s ease-out;
+    display: none;
+}
+
+.card-project:hover{
+    background-color: var(--backgroup-navbar);
+}
+
+.card-project:hover .arrow-svg{
+    transform: translate(20px, -5px);
+}
+
+@media screen and (min-width:1024px){
+
+    .card-project{
+        padding: 16px 8px;
+    }
+
+    .details-text > h3{
+        font-size: 26px;
+    }
+
+    .details-text > p{
+        font-size: 16px;
+    }
+
+    .arrow-svg{
+        display: inline;
+    }
+}
