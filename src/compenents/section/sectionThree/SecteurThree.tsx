@@ -22,7 +22,7 @@ export function SecteurThree({page}:ISecteurThree) {
 
     return(
         <section className="section-three">
-            <h1 className={page === "experiences" ? "section-one-Two-Project" : "section-one-Two"}>4 YEARS OF <span>EXPERIENCES</span></h1>
+            <h1 className={page === "experiences" ? "section-one-Two-Project" : "section-one-Two"}>4 ANNÉES <span>D'EXPERIENCES</span></h1>
             <div className="cards">
                 {page === "experiences" ?
                     data.map((experience, index) =>{

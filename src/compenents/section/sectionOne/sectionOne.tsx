@@ -15,7 +15,7 @@ export function SectionOne() {
     const navigate = useNavigate();
 
     const handleClick = (link:string) => {
-            navigate("/");
+            navigate(link);
     };
 
     return(

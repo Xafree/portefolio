@@ -22,7 +22,7 @@ export function SectionTwo({page}:ISectionTwo) {
 
     return(
         <section className={page ==="project" ? "section-two-project" :"section-two"}>
-            <h1 className={page === "project" ? "section-one-Two-Project" : "section-one-Two"}>RECENT <span>PROJECTS</span></h1>
+            <h1 className={page === "project" ? "section-one-Two-Project" : "section-one-Two"}>RÉCENTS <span>PROJETS</span></h1>
             <div className="cards">
                 { page === "project"  ?
                     data.map((project, index) =>{
