@@ -161,7 +161,7 @@
     stroke: var(--backgroup-div-green);
 }
 
-@media screen and (min-width:560px) and (max-width: 1024px ){
+@media screen and (min-width:560px) and (max-width: 1300px ){
     .left-block{
         width: 45%;
         height: 23vh;
@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1300px){
     .section-one{
         width: 100%;
     }

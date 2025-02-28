@@ -64,7 +64,15 @@
 
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) and (max-width: 1300px ){
+
+    .cards-tech{
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1300px){
 
     .section-four{
         width: 100%;

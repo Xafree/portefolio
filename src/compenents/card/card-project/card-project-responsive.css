@@ -71,7 +71,7 @@
     transform: translate(20px, -5px);
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1300px){
 
     .card-project{
         padding: 16px 8px;
